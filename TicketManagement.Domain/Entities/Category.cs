@@ -13,6 +13,6 @@ namespace TicketManagement.Domain.Entities
 
         public string Name { get; set; } = string.Empty;
 
-        public ICollection<Event>? events { get; set; }
+        public ICollection<Event>? Events { get; set; }
     }
 }

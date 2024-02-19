@@ -13,3 +13,4 @@ C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Application\obj\Debug
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Application\obj\Debug\net8.0\refint\TicketManagement.Application.dll
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.pdb
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Application\obj\Debug\net8.0\ref\TicketManagement.Application.dll
+C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Application\obj\Debug\net8.0\TicketManagement.Application.sourcelink.json

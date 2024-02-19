@@ -7,7 +7,7 @@ using TicketManagement.Domain.Entities;
 
 namespace TicketManagement.Application.Contracts.Persistence
 {
-    internal interface IOrderRepository : IAsyncRepository<Order>
+    public interface IOrderRepository : IAsyncRepository<Order>
     {
     }
 }
