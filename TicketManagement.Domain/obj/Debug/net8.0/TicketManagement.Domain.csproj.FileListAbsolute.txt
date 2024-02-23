@@ -5,8 +5,8 @@ C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.AssemblyInfoInputs.cache
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.AssemblyInfo.cs
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.sourcelink.json
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.dll
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\refint\TicketManagement.Domain.dll
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.pdb
 C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\ref\TicketManagement.Domain.dll
-C:\Users\Mahmoud\Desktop\TicketManagement\TicketManagement.Domain\obj\Debug\net8.0\TicketManagement.Domain.sourcelink.json

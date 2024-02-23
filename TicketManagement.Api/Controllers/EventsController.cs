@@ -1,9 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using TicketManagement.Api.Utility;
 using TicketManagement.Application.Features.Events.Commands.CreateEvent;
 using TicketManagement.Application.Features.Events.Commands.DeleteEvent;
 using TicketManagement.Application.Features.Events.Commands.UpdateEvent;
 using TicketManagement.Application.Features.Events.Queries.GetEventDetail;
+using TicketManagement.Application.Features.Events.Queries.GetEventsExport;
 using TicketManagement.Application.Features.Events.Queries.GetEventsList;
 
 namespace TicketManagement.Api.Controllers
@@ -53,7 +55,7 @@ namespace TicketManagement.Api.Controllers
             return NoContent(); 
         }
 
-        [HttpPut(Name = "UpdateEvent")]
+        [HttpDelete(Name = "DeleteEvent")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -64,5 +66,13 @@ namespace TicketManagement.Api.Controllers
             return NoContent() ;
         }
 
+        [HttpGet("export",Name ="ExportEvents")]
+        [FileResultContentType("text/csv")]
+        public async Task<FileResult> ExportEvents()
+        {
+            var fileDto = await mediator.Send(new GetEventsExportQuery());
+
+            return File(fileDto.Data, fileDto.ContentType, fileDto.EventExportFileName);
+        }
     }
 }

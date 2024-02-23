@@ -1,7 +1,7 @@
 
 namespace TicketManagement.Api
 {
-    public class Program
+    public partial class Program
     {
         public static async Task Main(string[] args)
         {
@@ -37,4 +37,5 @@ namespace TicketManagement.Api
             app.Run();
         }
     }
+    public partial class Program { }
 }

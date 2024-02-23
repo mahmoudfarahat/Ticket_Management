@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketManagement.Application.Contracts;
 using TicketManagement.Domain.Common;
 using TicketManagement.Domain.Entities;
 
@@ -11,10 +12,15 @@ namespace TicketManagement.Persistence
 {
     public class TicketDbContext : DbContext
     {
+        private readonly ILoggedInUserService loggedUserService;
+
         public TicketDbContext(DbContextOptions<TicketDbContext> options) : base(options)
         {
         }
-
+        public TicketDbContext(DbContextOptions<TicketDbContext> options,ILoggedInUserService loggedUserService) : base(options)
+        {
+            this.loggedUserService = loggedUserService;
+        }
         public DbSet<Event> Events { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -194,9 +200,12 @@ namespace TicketManagement.Persistence
                 {
                     case EntityState.Added:
                         entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedBy = loggedUserService.UserId;
                         break;
                     case EntityState.Modified:
                         entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedBy = loggedUserService.UserId;
+
                         break;
                 }
             }

@@ -1,0 +1,7 @@
+{
+  "TicketManagement.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Mahmoud\\Desktop\\TicketManagement\\TicketManagement.Api",
+  "TicketManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Mahmoud\\Desktop\\TicketManagement\\TicketManagement.Application",
+  "TicketManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Mahmoud\\Desktop\\TicketManagement\\TicketManagement.Domain",
+  "TicketManagement.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Mahmoud\\Desktop\\TicketManagement\\TicketManagement.Infrastructure",
+  "TicketManagement.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Mahmoud\\Desktop\\TicketManagement\\TicketManagement.Persistence"
+}

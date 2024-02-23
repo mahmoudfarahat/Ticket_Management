@@ -10,7 +10,7 @@ using TicketManagement.Domain.Entities;
 
 namespace TicketManagement.Application.Features.Categories.Commands.CreateCategory
 {
-    internal class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, CreateCategoryCommandResponse>
+    public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, CreateCategoryCommandResponse>
     {
         private readonly IMapper mapper;
         private readonly IAsyncRepository<Category> categoryRepository;

@@ -8,7 +8,7 @@ namespace TicketManagement.Application.Features.Categories.Queries.GetCategories
 {
     public class CategoryListVm
     {
-        public Guid EventId { get; set; }
+        public Guid CategoryId { get; set; }
 
         public string Name { get; set; }
     }
